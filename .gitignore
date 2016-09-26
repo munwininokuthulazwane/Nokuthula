@@ -1,3 +1,4 @@
+
 ###################
 # compiled source #
 ###################
@@ -22,9 +23,9 @@ _UpgradeReport_Files/
 ###############
 # Directories #
 ###############
-bin/
-obj/
-TestResults/
+"The Supplier"/bin/
+"The Supplier"/obj/
+"The Supplier"/TestResults/
 ###################
 # Web publish log #
 ###################
