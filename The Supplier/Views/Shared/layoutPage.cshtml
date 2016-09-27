@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <title>Noko's fruit and veg Supplies</title>
+
+    <link rel="stylesheet" type="text/css" href="~/css/Supplier.css" />
+</head>
+<body style="background-image:url(images/farm-005.jpg); background-size:100%">
+
+    <img src="~/images/farm-005.jpg" style="width:304px;height:228px;">
+    @RenderBody()
+    <p>Fresh fruit and veg</p>
+    <ul>
+        <li> @Html.ActionLink("Home", "Index", "Home")</li>
+    </ul>
+   
+
+    <div>
+    </div>
+
+</body>
+</html>

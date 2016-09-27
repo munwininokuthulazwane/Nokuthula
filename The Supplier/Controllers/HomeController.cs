@@ -17,5 +17,17 @@ namespace The_Supplier.Controllers
         {
             return View();
         }
+        public ActionResult ContactUs()
+        {
+            return View();
+        }
+        public ActionResult Product()
+        {
+            return View();
+        }
+        public ActionResult Catalogue()
+        {
+            return View();
+        }
     }
 }
