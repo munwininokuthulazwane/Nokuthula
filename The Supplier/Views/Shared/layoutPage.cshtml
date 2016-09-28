@@ -8,22 +8,27 @@
 
     <link rel="stylesheet" type="text/css" href="~/css/Supplier.css" />
 </head>
-<body style="background-image:url(images/farm-005.jpg); background-size:100%">
 
-    @RenderBody()
-    <p>Fresh fruit and veg</p>
-    <ul>
-        <li> @Html.ActionLink("Home", "Index", "Home")</li>
-        <li>@Html.ActionLink("AboutUs","Index","Home")</li>
-        <li> @Html.ActionLink("ContactUs","Index","Home")</li>
-        <li>@Html.ActionLink("Catalogue","Index","Home")</li>
-        <li>@Html.ActionLink("Products","Index","Home")</li>
-        
-    </ul>
+
    
+    <p>Fresh fruit and veg</p>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
 
-    <div>
+        <div>
+            <ul>
+                <li> @Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About Us", "AboutUs", "Home")</li>
+                <li> @Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
+                <li>@Html.ActionLink("Catalogue", "Catalogue", "Home")</li>
+                <li>@Html.ActionLink("Products", "Product", "Home")</li>
+            </ul>
+
+
+
+        </div>
     </div>
+</div>
+@RenderBody()
 
-</body>
 </html>
