@@ -5,30 +5,26 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <title>Noko's fruit and veg Supplies</title>
-
     <link rel="stylesheet" type="text/css" href="~/css/Supplier.css" />
 </head>
-
-
-   
-   
-
-    <div class="navbar-header">
-
-        <div>
-            <ul>
-                <li> @Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("About Us", "AboutUs", "Home")</li>
-                <li> @Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
-                <li>@Html.ActionLink("Catalogue", "Catalogue", "Home")</li>
-                <li>@Html.ActionLink("Products", "Product", "Home")</li>
-            </ul>
-
-
-
+<body>
+    <div id="top">
+        <div class="shell">
+            <div id="header">
+                <div class="menu">
+                    <div>
+                        <ul>
+                            <li> @Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About Us", "AboutUs", "Home")</li>
+                            <li> @Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
+                            <li>@Html.ActionLink("Catalogue", "Catalogue", "Home")</li>
+                            <li>@Html.ActionLink("Products", "Product", "Home")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-@RenderBody()
-
+    @RenderBody()
+</body>
 </html>
