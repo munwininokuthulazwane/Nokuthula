@@ -120,14 +120,34 @@
     <Content Include="css\Supplier.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\02-20-2015Agriculture.jpg" />
+    <Content Include="images\19.tree-logo.jpg" />
+    <Content Include="images\62.jpg" />
     <Content Include="images\Apple.jpg" />
+    <Content Include="images\Banana.jpg" />
+    <Content Include="images\beetroot.jpg" />
+    <Content Include="images\community-farming-1.jpg" />
+    <Content Include="images\d03ac4890025efb6335ee2fdbcc57906.jpg" />
     <Content Include="images\farm-005.jpg" />
-
+    <Content Include="images\farm.jpg" />
     <Content Include="images\fruits-raquo-best-free.jpg" />
+    <Content Include="images\Grapes.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\images.png" />
+    <Content Include="images\lettuce.jpg" />
     <Content Include="images\Logo.ico" />
     <Content Include="images\Logo.png" />
-
+    <Content Include="images\Orange.jpg" />
+    <Content Include="images\Pawpaw.jpg" />
+    <Content Include="images\pepper.jpg" />
+    <Content Include="images\Potatos.jpg" />
+    <Content Include="images\pumkin.jpg" />
+    <Content Include="images\red apple.jpg" />
+    <Content Include="images\rTnrd75pc.jpg" />
+    <Content Include="images\temecula-ben-dr.jpg" />
+    <Content Include="images\Tomato.jpg" />
     <Content Include="images\Veg.jpg" />
+    <Content Include="images\watermelon.jpg" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="scripts\bootstrap.js" />

@@ -11,20 +11,25 @@
     <div id="top">
         <div class="shell">
             <div id="header">
-                <div class="menu">
-                    <div>
-                        <ul>
-                            <li> @Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About Us", "AboutUs", "Home")</li>
-                            <li> @Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
-                            <li>@Html.ActionLink("Catalogue", "Catalogue", "Home")</li>
-                            <li>@Html.ActionLink("Products", "Product", "Home")</li>
-                        </ul>
+                    <div class="menu">
+                        <div>
+                            <ul>
+                                <li> @Html.ActionLink("Home", "Index", "Home")</li>
+                                <li>@Html.ActionLink("About Us", "AboutUs", "Home")</li>
+                                <li> @Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
+                                <li>@Html.ActionLink("Catalogue", "Catalogue", "Home")</li>
+                                <li>@Html.ActionLink("Products", "Product", "Home")</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    
+    
+
     @RenderBody()
+    
 </body>
+
 </html>
