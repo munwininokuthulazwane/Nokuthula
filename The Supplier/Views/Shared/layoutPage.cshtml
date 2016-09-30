@@ -16,7 +16,7 @@
                         <ul>
                             <li> @Html.ActionLink("Home", "Index", "Home")</li>
                             <li>@Html.ActionLink("About Us", "AboutUs", "Home")</li>
-                            <li> @Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
+                            <li>@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
                             <li>@Html.ActionLink("Catalogue", "Catalogue", "Home")</li>
                             <li>@Html.ActionLink("Products", "Product", "Home")</li>
                         </ul>
@@ -25,6 +25,11 @@
             </div>
         </div>
     </div>
+    
+   
     @RenderBody()
+    <footer>
+        <p >&copy; @DateTime.Now.Year- Created by Noko's fruit and veg Supplies</p>
+    </footer>
 </body>
 </html>
