@@ -2,7 +2,7 @@
    padding-top: 50px;
     padding-bottom: 20px;
     font-family:'Comic Sans MS';
-    font-size:larger;
+    font-size:small;
     
     color:white;
    background-image:url('../../images/fruits-raquo-best-free.jpg');
@@ -38,13 +38,14 @@ header img {
     width:980px; margin:0 auto;
 }
 #top{
-    height:60px;
+    height:62px;
+    width:unset;
     background-color:darkgreen;
 }
 #header{
-    height:61px;
+    height:60px;
 }
-<<<<<<< HEAD
+
 .footer{
 margin-top: 100px ;
 text-align: center ;
@@ -53,5 +54,69 @@ font-family: verdana ;
 width: 600px ;
 height: 50px ;
 }
-=======
->>>>>>> fb7286d9bc0f69631b79e533f95afbeb88336696
+.show {
+    max-width:50px;
+         /*position:relative;*/
+         position:center;
+         margin: auto;
+}
+.show-btn-floating, .Shows-btn-floating{ 
+cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 29px;
+    border-radius: 0 3px 3px 0;
+
+}
+.Shows-btn-floating{
+     right: 0;
+     left:0;
+  border-radius: 3px 0 0 3px;
+}
+div#fixedfooter{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    color:white;
+    background-color:darkgreen;
+    padding:5px;
+}
+.logo{
+    font-size:0;
+    line-height:0;
+    color:darkgreen;
+    height:58px;
+    float:left;
+    background-position:left;
+    
+}
+img.display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.t{
+    text-align:center;
+    font-size:medium;
+    color :white;
+
+}
+
+.slider 
+{
+    border-style:solid;
+    width:auto;
+
+}
+
+
+
+

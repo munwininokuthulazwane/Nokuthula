@@ -133,10 +133,8 @@
     <Content Include="images\fruits-raquo-best-free.jpg" />
     <Content Include="images\Grapes.jpg" />
     <Content Include="images\images.jpg" />
-    <Content Include="images\images.png" />
     <Content Include="images\lettuce.jpg" />
-    <Content Include="images\Logo.ico" />
-    <Content Include="images\Logo.png" />
+    <Content Include="images\noko%27s.jpg" />
     <Content Include="images\Orange.jpg" />
     <Content Include="images\Pawpaw.jpg" />
     <Content Include="images\pepper.jpg" />
@@ -153,6 +151,7 @@
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\JavaScript.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
