@@ -1,21 +1,105 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
 @{
-    ViewBag.Title = "ContactUs";
+    ViewBag.Title = "Catalogue";
+    Layout = "~/Views/Shared/layoutPage.cshtml";
 }
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="~/css/Supplier.css" />
+    <script type="text/javascript">
 
-<h2>ContactUs</h2>
+        function submit() {
+            var name = document.getElementById('names').value
+            var email = document.getElementById('Email').value
+            alert("Thank you!"+" " + name + " "+" we will contact you on "+" "+ email);
+        }
+        function validateForm()
+        {
+            //var x=document.
+            var y=document.forms["ContactUs"]["names"].value
+            if(x==null || x=="")
+            {
+                return false;
+            }
+            else {
+                submit();
+            }
+        }
+    </script>
 
-<address>
-    <br />
-    Noko's Fruit & Veggy Supplies<br />
-    12 Pretoria road<br />
-    Kempton Park<br />
-    <abbr title="Phone">Phone:</abbr>
-    011 925 3115
-</address>
+</head>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">mthlathla@yahoo.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">nokuthulazwane40@gmail.com</a>
+<body>
+    @{
+        ViewBag.Title = "ContactUs";
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+    @*<table border="1" style=" width:auto; font-family:Arial" align="center">*@
+=======
+    @*<table border="0" style=" width:auto; font-family:Arial" align="center">*@
+>>>>>>> 0e674dc4ff6da7f44929e23400a7efcd7c74c2fc
+=======
+    @*<table border="0" style=" width:auto; font-family:Arial" align="center">*@
+>>>>>>> 0e674dc4ff6da7f44929e23400a7efcd7c74c2fc
+    <table border="0" style="width:auto; font-family:'Comic Sans MS'" align="center">
+        <tr>
+            <td colspan="10" style="text-align:center">
+                <h3>Get in touch with us</h3>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 970px; height: 90px">
+                <div id="text" align="center"   >
 
-</address>
+                    <h2 style=" display inline-block; ">Name:</h2>
+                    <input type="text" id="names" style="height: 30px; width: 300px;" /><br />
+                    <h2 style=" display inline-block; ">Email:</h2>
+                    <input type="text" id="Email" style="height: 30px; width: 300px;" /><br />
+                    <div id="Submit">
+                        <h2 style=" display inline-block; "></h2>
+
+                        
+                        <input type="submit" value="Submit" onclick="submit()" style="height: 30px; width: 200px;" />
+                    </div>
+
+
+                </div>
+
+
+            </td>
+
+
+            </tr>
+
+
+
+    </table>
+
+
+        <address>
+            <p>We provide fresh organic fruits and vegetables, that is grown from our own farm.</p>
+            <p> We also do deliveries for our customers.</p>
+
+            <br>
+
+            <br />
+            Noko's Fruit & Veggy Supplies<br />
+            12 Pretoria road<br />
+            Kempton Park<br />
+            <abbr title="Phone">Phone:</abbr>
+            011 925 3115
+
+
+        </address>
+
+        <address>
+            <strong>Support:</strong>   <a href="mailto:Support@example.com">mthlathla@yahoo.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">nokuthulazwane40@gmail.com</a>
+
+        </address>
+   
+
+</body>
+</html>

@@ -1,7 +1,63 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
 @{
     ViewBag.Title = "Catalogue";
 }
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="~/css/Supplier.css" />
+    
+    @*<script src="~/scripts/JavaScript.js"></script>*@
+   
 
-<h2>Catalogue</h2>
+    <style>
+        .mySlides {
+            display: block;
+            margin:0 auto;
+        }
+
+         img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="Showp"> Noko's Fruit and Veg supplies</h2>
+    <h3 class="t">Take a walk to our farm </h3>
+
+        <div  class="thuli" @*style="max-width:500px  "*@>
+            <img class="mySlides" src="~/images/Banana.jpg"style="width:50%">
+            <img class="mySlides" src="~/images/beetroot.jpg" style="width:50%">
+            <img class="mySlides" src="~/images/Grapes.jpg" style="width:50%">
+            <img class="mySlides" src="~/images/lettuce.jpg" style="width:50%" >
+            <img class="mySlides"src="~/images/Orange.jpg" style="width:50%" >
+            <img class="mySlides" src="~/images/pepper.jpg" style="width:50%" >
+            <img class="mySlides" src="~/images/Potatos.jpg" style="width:50%" >
+            <img class="mySlides" src="~/images/pumkin.jpg" style="width:50%" >
+        </div>
+
+        <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+        </script>
+
+
+    </body>
+</html>
+
+
 
