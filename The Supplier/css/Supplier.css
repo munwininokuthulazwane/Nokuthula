@@ -89,7 +89,7 @@ cursor: pointer;
 }
 div#fixedfooter{
     position:fixed;
-    bottom:0px;
+    bottom:-14px;
     left:0px;
     width:100%;
     color:white;
@@ -113,7 +113,12 @@ div#fixedfooter{
     margin-left: auto;
     margin-right: auto;
     margin-top:11px;
-    margin-bottom:21px;         
+    margin-bottom:21px;
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+ 
+    
+           
     
 }
 
@@ -128,17 +133,14 @@ div#fixedfooter{
 .slider {
     border-style: solid;
     width: auto;
+    opacity:0.2;
 }
 th
 {
     font-size:large
 }
 
-
-
-
 td{
-
 }
 
 

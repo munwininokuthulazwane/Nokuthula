@@ -14,6 +14,18 @@
             var email = document.getElementById('Email').value
             alert("Thank you!"+" " + name + " "+" we will contact you on "+" "+ email);
         }
+        function validateForm()
+        {
+            //var x=document.
+            var y=document.forms["ContactUs"]["names"].value
+            if(x==null || x=="")
+            {
+                return false;
+            }
+            else {
+                submit();
+            }
+        }
     </script>
 
 </head>
@@ -23,9 +35,9 @@
         ViewBag.Title = "ContactUs";
     }
     @*<table border="1" style=" width:auto; font-family:Arial" align="center">*@
-    <table border="1" style="width:auto; font-family:'Comic Sans MS'" align="center">
+    <table border="0" style="width:auto; font-family:'Comic Sans MS'" align="center">
         <tr>
-            <td colspan="15" style="text-align:center">
+            <td colspan="10" style="text-align:center">
                 <h3>Get in touch with us</h3>
             </td>
         </tr>
@@ -40,6 +52,7 @@
                     <div id="Submit">
                         <h2 style=" display inline-block; "></h2>
 
+                        
                         <input type="submit" value="Submit" onclick="submit()" style="height: 30px; width: 200px;" />
                     </div>
 
