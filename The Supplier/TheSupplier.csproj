@@ -125,14 +125,19 @@
     <Content Include="images\appl.png" />
     <Content Include="images\bet.png" />
     <Content Include="images\edited.png" />
+    <Content Include="images\frr.png" />
     <Content Include="images\fruits-raquo-best-free.jpg" />
     <Content Include="images\lett.png" />
     <Content Include="images\lg.png" />
+    <Content Include="images\melon.png" />
+    <Content Include="images\my basket.png" />
+    <Content Include="images\Noko%27s Header1.jpg" />
     <Content Include="images\orange.png" />
     <Content Include="images\paw.png" />
     <Content Include="images\pepr.png" />
     <Content Include="images\pump.png" />
     <Content Include="images\tom.png" />
+    <Content Include="images\zambane.png" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="scripts\bootstrap.js" />
@@ -141,6 +146,11 @@
     <Content Include="scripts\JavaScript.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
+    <None Include="scripts\jquery.validate-vsdoc.js" />
+    <Content Include="scripts\jquery.validate.js" />
+    <Content Include="scripts\jquery.validate.min.js" />
+    <Content Include="scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Views\mergefile.html" />
     <Content Include="Web.config" />
@@ -148,10 +158,13 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ProductDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Product.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -170,6 +183,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Catalogue.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Product\product.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -179,7 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="scripts\Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

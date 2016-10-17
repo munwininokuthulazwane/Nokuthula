@@ -10,39 +10,32 @@
     <script type="text/javascript">
 
         function submit() {
+
             var name = document.getElementById('names').value
             var email = document.getElementById('Email').value
-            alert("Thank you!"+" " + name + " "+" we will contact you on "+" "+ email);
-        }
-        function validateForm()
+
+              alert("Thank you!" + "  " + name + " " + " we will contact you on " + " " + email);
+            }
+     
+
+
+      
+        function ValidateForm()
         {
-            //var x=document.
-            var y=document.forms["ContactUs"]["names"].value
-            if(x==null || x=="")
-            {
-                return false;
-            }
-            else {
-                submit();
-            }
-        }
+        
+            var y = document.forms["ContactUs"]["names"].value
+        
+}
+
+       
     </script>
 
 </head>
 
 <body>
-    @{
-        ViewBag.Title = "ContactUs";
-    }
-<<<<<<< HEAD
-<<<<<<< HEAD
-    @*<table border="1" style=" width:auto; font-family:Arial" align="center">*@
-=======
-    @*<table border="0" style=" width:auto; font-family:Arial" align="center">*@
->>>>>>> 0e674dc4ff6da7f44929e23400a7efcd7c74c2fc
-=======
-    @*<table border="0" style=" width:auto; font-family:Arial" align="center">*@
->>>>>>> 0e674dc4ff6da7f44929e23400a7efcd7c74c2fc
+   @{  ViewBag.Title = "ContactUs";
+       }
+   
     <table border="0" style="width:auto; font-family:'Comic Sans MS'" align="center">
         <tr>
             <td colspan="10" style="text-align:center">
@@ -51,7 +44,7 @@
         </tr>
         <tr>
             <td style="width: 970px; height: 90px">
-                <div id="text" align="center"   >
+                <div id="text" align="center">
 
                     <h2 style=" display inline-block; ">Name:</h2>
                     <input type="text" id="names" style="height: 30px; width: 300px;" /><br />
@@ -60,7 +53,7 @@
                     <div id="Submit">
                         <h2 style=" display inline-block; "></h2>
 
-                        
+
                         <input type="submit" value="Submit" onclick="submit()" style="height: 30px; width: 200px;" />
                     </div>
 
@@ -71,11 +64,15 @@
             </td>
 
 
-            </tr>
+        </tr>
 
 
 
     </table>
+
+   
+  
+       
 
 
         <address>
@@ -95,11 +92,11 @@
         </address>
 
         <address>
-            <strong>Support:</strong>   <a href="mailto:Support@example.com">mthlathla@yahoo.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">nokuthulazwane40@gmail.com</a>
+            <strong>Support:</strong>   <a href="mailto:Support@example.com">nokuthulazwane40@gmail.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">tdingiswayo@gmail.com</a>
 
         </address>
-   
+    
 
 </body>
 </html>

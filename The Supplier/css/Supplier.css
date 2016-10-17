@@ -5,8 +5,35 @@
     font-size:medium;
     
     color:white;
-   background-image:url('../../images/fruits-raquo-best-free.jpg');
+   /*background-image:url('../../images/fruits-raquo-best-free.jpg');*/
+   /*background-image:url(../../images/)*/
+   /*background-image: url('../images/fruits-raquo-best-free.jpg');*/
   
+   /*background-position:center;*/
+   /*background-color:#adad85;*/
+   background:#adad85;
+
+  
+  
+   
+  
+}
+#pictureHome img{
+    image-orientation:from-image;
+    float:right;
+    padding-left:120px;
+}
+
+#center img {
+    position:center;
+    padding-right:100PX;
+    width:100%;
+  margin-bottom:2px;
+  
+  margin-left:-7px;
+  margin-right:-71px;
+  
+   
 }
 .menu ul {
     list-style :none;
@@ -53,7 +80,59 @@ header img {
 }
 #header{
     height:60px;
+    text-align:center;
+      
 }
+h1{
+    text-align:center;
+}
+
+section{
+    display:block;
+}
+.Container{
+    width:700px;
+    margin-top:30px auto 0;
+    align-content:center;
+}
+#content{
+    background:linear-gradient( to top ,#adad85 0% ,#adad85 0%, #808080 100%);
+      background:-webkit-linear-gradient(bottom ,#adad85 0% ,#adad85 0%, #808080 100%);
+      padding-top:30px;
+          padding-bottom:30px;
+}
+.gallery{
+    width:689px;
+    margin-top:auto;
+}
+.gallery ul{
+    list-style:none;
+}
+.gallery li{
+    float:left;
+    margin:10px;
+    
+}
+.gallery img{
+    display:block;
+    padding:5px;
+    border:1px solid;
+    box-shadow:#adad85;
+}
+gallery img :hover{
+    border:1px;
+    cursor:pointer;
+} 
+#home{
+display:block;
+border:5px solid;
+border-color:darkgreen;
+width:35%;
+height:200px;
+
+
+}
+
 
 .footer{
 margin-top: 100px ;
@@ -103,7 +182,7 @@ div#fixedfooter{
     height:75px;
     float:left;
     background-position:left;
-    margin-top:-58px;
+    margin-top:-111px;
     margin-left:-7px;
     
 }
@@ -114,8 +193,8 @@ div#fixedfooter{
     margin-right: auto;
     margin-top:11px;
     margin-bottom:21px;
-    opacity: 0.6;
-    filter: alpha(opacity=40);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
  
     
            
@@ -140,7 +219,8 @@ th
     font-size:large
 }
 
-td{
+#header{
+  
 }
 
 
