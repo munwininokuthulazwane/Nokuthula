@@ -124,6 +124,7 @@
     <Content Include="images\ap.png" />
     <Content Include="images\appl.png" />
     <Content Include="images\bet.png" />
+    <Content Include="images\Directions.png" />
     <Content Include="images\edited.png" />
     <Content Include="images\frr.png" />
     <Content Include="images\fruits-raquo-best-free.jpg" />
@@ -209,7 +210,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>61541</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:61541/</IISUrl>
+          <IISUrl>http://localhost:8080/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:8080/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
