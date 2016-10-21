@@ -36,15 +36,22 @@
    @{  ViewBag.Title = "ContactUs";
        }
    
-    <table border="0" style="width:auto; font-family:'Comic Sans MS'" align="left">
+   <div class="direct">
+       <h5>Our location</h5>
+       <img src="~/images/Directions.png" />
+       <p></p>
+   </div>
+    
+   
+    <table border="0" style="width:auto; font-family:'Comic Sans MS'" align="center">
         <tr>
-            <td colspan="10" style="text-align:center">
+            <td colspan="5" style="text-align:left">
                 <h3>Get in touch with us</h3>
             </td>
         </tr>
         <tr>
             <td style="width: 970px; height: 90px">
-                <div id="text" align="center">
+                <div id="text" align="left">
 
                     <h2 style=" display inline-block; ">Name:</h2>
                     <input type="text" id="names" style="height: 30px; width: 300px;" /><br />
@@ -70,14 +77,12 @@
 
     </table>
 
-   
-  
        
 
 
         <address>
-            <p>We provide fresh organic fruits and vegetables, that is grown from our own farm.</p>
-            <p> We also do deliveries for our customers.</p>
+            @*<p>We provide fresh organic fruits and vegetables, that is grown from our own farm.</p>
+            <p> We also do deliveries for our customers.</p>*@
 
             <br>
 
@@ -96,7 +101,12 @@
             <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">tshepi64.dingiswayo@gmail.com</a>
 
         </address>
+
+
+
     
+
+   
 
 </body>
 </html>
