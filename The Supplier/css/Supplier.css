@@ -177,7 +177,7 @@ cursor: pointer;
   border-radius: 3px 0 0 3px;
 }
 div#fixedfooter{
-       position: fixed;
+       position:relative;
     bottom: -14px;
     left: 0px;
     width: 1339px;
