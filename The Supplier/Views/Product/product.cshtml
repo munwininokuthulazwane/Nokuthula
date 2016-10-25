@@ -1,57 +1,52 @@
-﻿@model IEnumerable<The_Supplier.Models.Product>
+﻿@model The_Supplier.Models.Product
 
-@{
-    ViewBag.Title = "product";
-}
-
-<h2>product</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
             @Html.DisplayNameFor(model => model.ProdID)
-        </th>
-        <th>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdID)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.ProdNum)
-        </th>
-        <th>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdNum)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.ProdName)
-        </th>
-        <th>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdName)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.ProdPrice)
-        </th>
-        <th>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdPrice)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Category)
-        </th>
-        <th></th>
-    </tr>
+        </dt>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProdID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProdNum)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProdName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProdPrice)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
 
-</table>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

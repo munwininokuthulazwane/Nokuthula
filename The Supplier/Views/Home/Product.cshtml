@@ -19,22 +19,52 @@
 
             <div class="gallery">
                 <ul>
-                    <li> <img src="~/images/lett.png" /> </li>
-                    <li> <img src="~/images/tom.png"  /></li>
-                    <li><img src="~/images/zambane.png" /></li>
-                    <li><img src="~/images/pepr.png" /></li>
+                   
+                    
+                   
+                    <li> 
+                    <img src="~/images/lett.png" />
+                    @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "let01" }) 
+                    </li>
+                    <li>
+                     <img src="~/images/tom.png"  />
+                        @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "tom01" })
+                    </li>
+                    <li>
+                    <img src="~/images/zambane.png" />
+                        @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "pot01" })
+                    </li>
+                    <li>
+                    <img src="~/images/pepr.png" />
+                      @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "Pep01" })
+                    </li>
                    
                 </ul>
 
-                
+               
 
                 <ul>
                   
-                    <a href="http://localhost:8080/Home/Product"> <li><img src="~/images/appl.png" /></li></a>
-                    <li><img src="~/images/ap.png" /></li>
-                    <li><img src="~/images/orange.png" /></li>
-                    <li><img src="~/images/edited.png" /></li>
-                    <li><img src="~/images/paw.png" /></li>
+                     <li>
+                    <img src="~/images/appl.png" />
+                          @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "red01" })
+                     </li>
+                    <li>
+                    <img src="~/images/ap.png" />
+                        @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "gren01" })
+                    </li>
+                    <li>
+                    <img src="~/images/orange.png" />
+                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "org01" })
+                    </li>
+                    <li>
+                    <img src="~/images/edited.png" />
+                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "ban01" })
+                    </li>
+                    <li>
+                    <img src="~/images/paw.png" />
+                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "paw01" })
+                    </li>
                     
                 </ul>
             </div>

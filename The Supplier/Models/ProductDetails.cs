@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using The_Supplier.Models;
+
 
 namespace The_Supplier.Models
 {
@@ -121,7 +121,7 @@ namespace The_Supplier.Models
                 {
                     //filter = proName;
                     //proName = filter;
-                    //filter = pro.Add(proName);
+                    filter = item;
                    
                 }
             }
