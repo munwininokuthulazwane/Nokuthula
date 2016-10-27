@@ -19,7 +19,7 @@ namespace The_Supplier.Controllers
             {
                 ProdID = "",
                 ProdName = "",
-                ProdPrice =0.0,
+                ProdPrice = 0.0,
                 Category = ""
             };
 

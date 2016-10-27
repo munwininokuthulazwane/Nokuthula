@@ -3,50 +3,91 @@
 <div>
     <h4>Product</h4>
     <hr />
+
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.ProdID)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.ProdID)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ProdID)
-        </dd>
+            <dt style="text-align:center">
+                @Html.DisplayFor(model => model.ProdID)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ProdNum)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.ProdNum)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ProdNum)
-        </dd>
+            <dt style="text-align:center">
+                @Html.DisplayFor(model => model.ProdNum)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ProdName)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.ProdName)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ProdName)
-        </dd>
+            <dt style="text-align:center">
+                @Html.DisplayFor(model => model.ProdName)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ProdPrice)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.ProdPrice)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ProdPrice)
-        </dd>
+            <dt style="text-align:center">
+                @Html.DisplayFor(model => model.ProdPrice)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Category)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Category)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category)
-        </dd>
+            <dt style="text-align:center">
+                @Html.DisplayFor(model => model.Category)
+            </dt>
 
-    </dl>
+        </dl>
+
+
+    @*<table style="width:70%" align="center">
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.ProdID)</td>
+        </tr>
+
+        <tr>
+            <td>@Html.DisplayFor(model => model.ProdID)</td>
+        </tr>
+
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.ProdNum)</td>
+        </tr>
+
+        <tr>
+            <td align="left">@Html.DisplayFor(model => model.ProdNum)</td>
+        </tr>
+
+        <tr>
+            <td align="left">@Html.DisplayNameFor(model => model.ProdName)</td>
+        </tr>
+
+        <tr>
+            <td align="left">@Html.DisplayNameFor(model => model.ProdName)</td>
+        </tr>
+
+        <tr>
+            <td> @Html.DisplayNameFor(model => model.ProdName)</td>
+        </tr>
+
+        <tr>
+            <td> @Html.DisplayFor(model => model.ProdName)</td>
+        </tr>
+
+    </table>*@
+
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+
+

@@ -1,18 +1,23 @@
-﻿@{
-    Layout = "ProductDetails";
-}
+﻿@model The_Supplier.Models.Product
 
-<!DOCTYPE html>
+<p>
+    
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="~/css/Supplier.css" />
-    
-</head>
-<body>
-    <div>
-    
-    </div>
-</body>
-</html>
+    <table id="product" style="width:100%">
+        <tr>
+           <th > @Html.DisplayNameFor(model => model.ProdID)</th>
+            <th>@Html.DisplayNameFor(model => model.ProdNum)</th>
+            <th>@Html.DisplayNameFor(model => model.ProdName)</th>
+            <th>@Html.DisplayNameFor(model => model.ProdPrice)</th>
+        </tr>
+        <tr>
+            <td>@Html.DisplayFor(model => model.ProdID)</td>
+            <td>@Html.DisplayFor(model => model.ProdNum)</td>
+            <td>@Html.DisplayFor(model => model.ProdName)</td>
+            <td>@Html.DisplayFor(model => model.Category)</td>
+        </tr>
+       
+    </table>
+
+
+</p>

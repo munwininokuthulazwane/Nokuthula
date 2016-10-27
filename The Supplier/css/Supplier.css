@@ -62,12 +62,20 @@
         text-align : center;
         line-height : 1px;
         height:auto;
+       
 
 }
+ul.tab li a:focus, .active
+{
+    background-color: aqua;
+
+}
+
  menu
  {
      margin-top:auto;
      margin-bottom:auto;
+     
 
  }
 .menu ul li a:hover       /*hover effect*/
@@ -126,16 +134,16 @@ section{
           padding-bottom:30px;
 }
 
-.gallaryHolder 
-{
+.gallaryHolder {
     border: 5px solid;
     border-color: darkgreen;
     height: 600px;
     width: 894px;
-    margin-left:50px;
-    padding-left:100px;
-
+    margin-left: 50px;
+    padding-left: 100px;
 }
+
+
 
 
 .gallery{
@@ -255,10 +263,10 @@ div#fixedfooter{
     width: auto;
     opacity:0.2;
 }
-th
+/*th
 {
     font-size:large
-}
+}*/
 
 #header{
   
@@ -267,7 +275,46 @@ th
     position:center;
     display:block;
 }
-
+/*.dl-horizontal{
+    display:block;
+    margin-top:1em;
+    margin-bottom:1em;
+    margin-left:0;
+    margin-right:0;
+}
+th{
+border:1px dotted darkgreen;
+display:block;
+/*vertical-align:inherit;*/
+/*font-weight:bold;
+text-align:center;
+padding-left:50px;
+width:80px;
+height:40px;
+}*/
+/*td{
+border:1px dotted darkgreen;
+display:block;
+/*vertical-align:inherit;*/
+/*font-weight:bold;
+text-align:center;
+padding-left:100px;
+width:80px;
+height:40px;*/
+/*}*/
+#product {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    width:80px;
+    height:40px;
+    border:2px;
+    
+    
+}
+
 
 
 
