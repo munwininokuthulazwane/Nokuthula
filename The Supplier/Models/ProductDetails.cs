@@ -114,6 +114,8 @@ namespace The_Supplier.Models
         }
       public Product getinfo(string proName)
         {
+            info();
+
             Product filter = null;
             foreach (Product item in pro)
             {

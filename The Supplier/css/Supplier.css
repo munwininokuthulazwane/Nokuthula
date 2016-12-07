@@ -36,6 +36,7 @@
 }
 
 
+
 #center 
 {
     position:center;
@@ -111,12 +112,15 @@ header img {
     text-align:center;
       
 }
-h1{
+h1,h6,h3,h4,p{
     text-align:center;
 }
 h5 {
     font-size: medium;
     font-family: 'Comic Sans MS';
+}
+h7{
+    text-align:right;
 }
 
 section{
@@ -177,7 +181,7 @@ display:block;
 border:5px solid;
 border-color:darkgreen;
 width:454px;
-height:200px;
+height:250px;
 
 
 }
@@ -216,7 +220,7 @@ cursor: pointer;
   border-radius: 3px 0 0 3px;
 }
 div#fixedfooter{
-       position:fixed;
+    position:fixed;
     bottom: -14px;
     left: 0px;
     width: 1339px;
@@ -302,6 +306,8 @@ padding-left:100px;
 width:80px;
 height:40px;*/
 /*}*/
+
+
 #product {
     display: block;
     margin-top: 1em;
@@ -314,7 +320,111 @@ height:40px;*/
     
     
 }
-
+#product th, tr{
+    border: 1px solid ;
+    text-align: left;
+    padding: 8px;
+
+}
+tr:nth-child(even) {
+    background-color:#adad85 ;
+}
+.shoppingcart{
+width:750px;
+height:423px;
+margin:80px auto;
+background:#adad85 ;
+box-shadow:#adad85;
+border:1px solid;
+display:flexbox;
+flex-direction:column;
+}
+.item{
+    padding:20px 30px;
+    height:120px;
+    display:flexbox;
+}
+.picofShopping{
+
+}
+
+.buttons{
+position:relative;
+padding-top:30px;
+margin-right:60px;
+
+
+}
+.delete-btn, .like-btn{
+    display:inline-block;
+    cursor:pointer;
+}
+.delete-btn{
+    width:18px;
+    height:17px;
+    background:#adad85;
+}
+.like-btn{
+position:absolute;
+top:9px;
+left:15px;
+
+background:#adad85;
+width:60px;
+height:60px;
+background-size:2900%;
+background-repeat:no-repeat ;
+
+
+}
+.picofShopping{
+
+margin-right:50px;
+
+}
+.description{
+
+padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+
+}
+
+.qty{
+    padding-top:20px;
+    margin-right:60px;
+
+}
+.qty input{
+    -webkit-appearance:none;
+    border:none;
+    text-align:center;
+    width:32px;
+    font-size:16px;
+    color:#adad85;
+    font-weight:300;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+
+  margin-top: 2px;
+
+}
+button:focus,input:focus {
+
+  outline:0;
+
+}
+#cartImages{
+    float:right;
+
+  position:left;
+
+}
+            
+
 
 
 

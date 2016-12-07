@@ -124,6 +124,8 @@
     <Content Include="images\ap.png" />
     <Content Include="images\appl.png" />
     <Content Include="images\bet.png" />
+    <Content Include="images\blue-shopping-cart-icon-4.jpg" />
+    <Content Include="images\cartss.png" />
     <Content Include="images\Directions.png" />
     <Content Include="images\edited.png" />
     <Content Include="images\frr.png" />
@@ -132,11 +134,13 @@
     <Content Include="images\lett.png" />
     <Content Include="images\lg.png" />
     <Content Include="images\melon.png" />
+    <Content Include="images\minus-symbol.svg" />
     <Content Include="images\my basket.png" />
     <Content Include="images\Noko%27s Header1.jpg" />
     <Content Include="images\orange.png" />
     <Content Include="images\paw.png" />
     <Content Include="images\pepr.png" />
+    <Content Include="images\plus.png" />
     <Content Include="images\pump.png" />
     <Content Include="images\tom.png" />
     <Content Include="images\zambane.png" />
@@ -164,7 +168,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\cart.cs" />
     <Compile Include="Models\ProductDetails.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Product.cs" />
   </ItemGroup>
@@ -187,6 +193,8 @@
     <Content Include="Views\Home\Product.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
     <Content Include="Views\Home\ProductDetails.cshtml" />
+    <Content Include="Views\Home\fullDetails.cshtml" />
+    <Content Include="Views\Home\Cart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -196,6 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\ShoppingCart\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

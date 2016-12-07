@@ -10,33 +10,56 @@
 </head>
 <body>
    
+   
     <div class="container">
         @*<header>Our Products</header>*@
-
+         
+         
         <section id="content">
             <h1> Our  Fruits and Vegetables </h1>
-            <div class="gallaryHolder">
+            @*<a href="~/Home/Cart"><img id="cartImage" src="~/images/cart.png"/></a>@ViewBag.cart*@
+     <a href="/Home/Cart"><img id="cartImage" src="~/images/cartss.png"/></a>@ViewBag.cart
+           
 
+ 
+           
+
+            <div class="gallaryHolder">
+              
             <div class="gallery">
                 <ul>
                    
-                    
+                    @*<li>
+
+                        @*<a href="#"><img src="~/images/blue-shopping-cart-icon-4.jpg" /></a>*@
+
+                     
+
+                    @*</li>*@
                    
                     <li> 
                     <img src="~/images/lett.png" />
-                    @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "let01" }) 
+                    @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "let01" })
+                        @Html.ActionLink("Add to Cart", "addtocart", new { ProdID = "let01" })   
+                        
                     </li>
                     <li>
                      <img src="~/images/tom.png"  />
                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "tom01" })
+                        @Html.ActionLink("Add to Cart", "addtocart", new { ProdID = "tom1" })
+                        
                     </li>
                     <li>
                     <img src="~/images/zambane.png" />
                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "pot01" })
+                        @Html.ActionLink("Add to Cart", "addtocart", new { ProdID = "pot01" })
+                        
                     </li>
                     <li>
                     <img src="~/images/pepr.png" />
                       @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "Pep01" })
+                        @Html.ActionLink("Add to Cart", "addtocart", new { ProdID = "pep01" })
+                        
                     </li>
                    
                 </ul>
@@ -47,24 +70,31 @@
                   
                      <li>
                     <img src="~/images/appl.png" />
-                          @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "red01" })
+                          @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "red01" })<br />
+                         @Html.ActionLink("Add to Cart", "addtocart", new { ProdID = "red01" })
                      </li>
                     <li>
                     <img src="~/images/ap.png" />
-                        @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "gren01" })
+                        @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "gren01" })<br />
+                        @Html.ActionLink("Add to Cart", "addtocart", new { ProdID = "gren01" })
                     </li>
                     <li>
                     <img src="~/images/orange.png" />
-                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "org01" })
+                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "org01" })<br />
+                        @Html.ActionLink("Add to Cart", "addtocart", new { ProdID = "org01" })
                     </li>
                     <li>
                     <img src="~/images/edited.png" />
-                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "ban01" })
+                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "ban01" })<br />
+                        @Html.ActionLink("Add to Cart", "addtocart", new { ProdID = "ban01" })
                     </li>
                     <li>
                     <img src="~/images/paw.png" />
-                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "paw01" })
+                         @Html.ActionLink("View Details", "ProductDetails", new { ProdID = "paw01" })<br />
+                        @Html.ActionLink("Add to Cart", "addtocart", new { ProdID = "paw01" })
                     </li>
+
+ 
                     
                 </ul>
             </div>
