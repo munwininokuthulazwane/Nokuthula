@@ -112,15 +112,15 @@ header img {
     text-align:center;
       
 }
-h1,h6,h3,h4,p{
+#h1,h6,h3,h4,h5,h2,p{
     text-align:center;
 }
-h5 {
+#h5 {
     font-size: medium;
     font-family: 'Comic Sans MS';
 }
 h7{
-    text-align:right;
+    text-align:center;;
 }
 
 section{
@@ -422,6 +422,17 @@ button:focus,input:focus {
 
   position:left;
 
+}
+th, td
+{
+    border:1px dotted darkgreen;
+    display:table-cell;
+    vertical-align:inherit;
+    font-weight:bold;
+    text-align:center;
+    padding-left:50px;
+    width:80px;
+    height:40px;
 }
             
 

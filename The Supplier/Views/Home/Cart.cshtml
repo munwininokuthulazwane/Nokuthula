@@ -1,21 +1,23 @@
 ﻿@model IEnumerable<The_Supplier.Models.ShoppingCart>
-
+  @using The_Supplier.Models;
+ 
 @{
     ViewBag.Title = "Cart";
 }
 
-<h2>My Basket </h2>
+
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Continue Shopping", "Product")
 </p>
-<table class="table">
+<table class="table" style="padding:30px;">
+    <caption>My basket</caption>
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.productName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.productID)
+            @Html.DisplayNameFor(model => model.prodID)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.qty)
@@ -26,7 +28,7 @@
         <th>
             @Html.DisplayNameFor(model => model.total)
         </th>
-        <th></th>
+       
     </tr>
 
 @foreach (var item in Model) {
@@ -35,7 +37,7 @@
             @Html.DisplayFor(modelItem => item.productName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.productID)
+            @Html.DisplayFor(modelItem => item.prodID)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.qty)
@@ -44,13 +46,16 @@
             @Html.DisplayFor(modelItem => item.subTotal)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.total)
+            @Html.DisplayFor(modelItem => item.total )
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Remove", "Delete", new { prodID = item.prodID }) 
+            @*@Html.ActionLink("Delete", "Delete", new { isbn = item.IBSN }, null)*@
+            @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+           
         </td>
+        
     </tr>
 }
 

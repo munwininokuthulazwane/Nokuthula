@@ -39,7 +39,7 @@ namespace The_Supplier.Models
             peper.ProdName = "Peper";
             peper.ProdPrice = 8.00;
             peper.Category = "Vegetable";
-            peper.ProdID = "Pep01";
+            peper.ProdID = "909090";
             pro.Add(peper);
 
 
@@ -47,7 +47,7 @@ namespace The_Supplier.Models
             lettuce.ProdName = "Lettuce";
             lettuce.ProdPrice = 10.00;
             lettuce.Category = "Vegetable";
-            lettuce.ProdID = "let01";
+            lettuce.ProdID = "545312";
             pro.Add(lettuce);
 
             //betroot
@@ -75,39 +75,39 @@ namespace The_Supplier.Models
             watermelon.ProdName = "Watermelon";
             watermelon.ProdPrice = 50.00;
             watermelon.Category = "Fruit";
-            watermelon.ProdID = "wat01";
+            watermelon.ProdID = "11134";
             pro.Add(watermelon);
             //pawpaw
             pawpW.ProdName = "Pawpaw";
             pawpW.ProdPrice = 15.00;
             pawpW.Category = "Fruit";
-            pawpW.ProdID = "paw01";
+            pawpW.ProdID = "1111";
             pro.Add(pawpW);
 
             //tomato
             tomato.ProdName = "Tomato";
             tomato.ProdPrice = 15.00;
             tomato.Category = "Vegetable";
-            tomato.ProdID = "tom01";
+            tomato.ProdID = "0989";
             pro.Add(tomato);
             //Potatoes
 
             potatoes.ProdName = "Potato";
             potatoes.ProdPrice = 60.00;
             potatoes.Category = "Vegetable";
-            potatoes.ProdID = "pot01";
+            potatoes.ProdID = "9991";
             pro.Add(potatoes);
             //Apples
             RedApple.ProdName = "Red Apple";
             RedApple.ProdPrice = 20.00;
             RedApple.Category = "Fruits";
-            RedApple.ProdID = "red01";
+            RedApple.ProdID = "2345";
             pro.Add(RedApple);
 
             greenApple.ProdName = "Green Apple";
             greenApple.ProdPrice = 20.00;
             greenApple.Category = "fruit";
-            greenApple.ProdID = "gren01";
+            greenApple.ProdID = "56775";
             pro.Add(greenApple);
             
 

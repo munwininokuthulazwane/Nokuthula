@@ -11,9 +11,10 @@ namespace The_Supplier.Controllers
     {
         public static ProductDetails prodetails = new ProductDetails();
         static cart cart = new cart();
-         public ShoppingCart shoping = new ShoppingCart();
-         Product[] prod = new Product[50];
-        static int record = 0;
+
+        double total = 0.0;
+   
+      
 
         // GET: Home
         public ActionResult Index()
@@ -43,7 +44,7 @@ namespace The_Supplier.Controllers
         }
         public ActionResult Cart()
         {
-            List<ShoppingCart> myList = Session["products"] as List<ShoppingCart>;
+            List<ShoppingCart> myList = Session["Prof"] as List<ShoppingCart>;
 
 
 
@@ -59,34 +60,84 @@ namespace The_Supplier.Controllers
 
             return View(prodetails.pro);
         }
+
+
+
         public ActionResult addtocart(string ProdId)
         {
 
-
-            prod[record] = prodetails.getinfo(ProdId);
-
-            shoping.productName = prod[record].ProdName;
-            shoping.qty = 1;
-            shoping.subTotal = prod[record].ProdPrice;
-            shoping.total = 0;
-
-            
- 
-                // Session["cart"] = cart;
-                //shoping.qty = 1;
-                cart.carts(shoping);
-
-                ViewBag.cart = cart.catDetails.Count();
-
-                Session["products"] = cart.catDetails;
-                //ViewBag.shopping = addtocart(ProdId);
-                record++;
-            
+            if (Session["Prof"] == null)
+            {
+                Session["Prof"] = cart;
+            }
+            bool found = false;
+            int indexOfFound = -1;
+            for (int i = 0; i < cart.getItems().Count; i++)
+            {
+                ShoppingCart p = cart.getItems()[i];
+                if (p.prodID.Equals(ProdId, StringComparison.Ordinal))
+                {
+                    found = true;
+                    indexOfFound = i;
+                    
 
 
+                    
+                   break; 
+                }
+            }
+
+
+                if (found)
+                {
+                    ShoppingCart product = new ShoppingCart();
+                    cart.incrementQuantity(indexOfFound);
+
+                   
+                }
+                else
+                {
+                    
+                    ShoppingCart product = new ShoppingCart();
+
+                    Product item = prodetails.getinfo(ProdId);
+                    product.prodID = item.ProdID;
+                    product.productName = item.ProdName;
+                    product.qty = 1;
+                    product.subTotal = item.ProdPrice;
+                  
+                    cart.carts(product);
+
+                    ViewBag.cart = cart.catDetails.Count();
+
+                    Session["Prof"] = cart.catDetails;
+                    total += (product.qty * item.ProdPrice);
+
+                }
+               // orderTotal += (item.Count * item.Product.Price);
+               
+           
 
             return View("Product");
+        }
 
+  
+      
+     
+        public ActionResult Delete(string prodId)
+        {
+            List<ShoppingCart> myList = Session["Prof"] as List<ShoppingCart>;
+            var item = myList.SingleOrDefault(x => x.prodID == prodId);
+            if (item != null)
+
+                //total=total -Convert.ToDouble(item.subTotal);
+                myList.Remove(item);
+           // else
+            //{
+               // total =  product.qty* Convert.ToDouble(item.subTotal);
+                //Session["total"] = total;
+            //}
+            return RedirectToAction("Cart", "Home");
         }
 
 

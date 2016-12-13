@@ -8,7 +8,7 @@ namespace The_Supplier.Models
     public class ShoppingCart
     {
         public string productName { get; set; }
-        public string productID { get; set; }
+        public string prodID { get; set; }
         public int qty { get; set; }
         public double subTotal { get; set; }
         public decimal total { get; set; }
