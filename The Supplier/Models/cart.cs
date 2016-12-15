@@ -14,7 +14,7 @@ namespace The_Supplier.Models
         public void  carts(ShoppingCart cart)
         {
             catDetails.Add(cart);
-            total += cart.subTotal;
+            total += (cart.qty * cart.subTotal);
             totalItemsInCart += cart.qty;
         }
         public List<ShoppingCart> getItems()
@@ -22,15 +22,20 @@ namespace The_Supplier.Models
             return catDetails;
         }
 
-        public   double getTotal()
-        {
-            return total;
-        }
+        //public   double getTotal(double price,int qty)
+        //{
+
+        //    total = price * qty;
+        //    return total;
+        //}
         public void incrementQuantity(int index)
         {
-            catDetails[index].qty++;
-            total += catDetails[index].subTotal;
-            totalItemsInCart++;
+            ShoppingCart item = catDetails[index];
+            item.qty++;
+            item.total = item.subTotal * item.qty;
+            total += item.subTotal;
+            
+            catDetails[index] = item;
         }
     }
 }

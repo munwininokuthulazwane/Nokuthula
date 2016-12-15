@@ -105,14 +105,14 @@ namespace The_Supplier.Controllers
                     product.productName = item.ProdName;
                     product.qty = 1;
                     product.subTotal = item.ProdPrice;
-                  
+                    product.total = product.subTotal;
                     cart.carts(product);
 
                     ViewBag.cart = cart.catDetails.Count();
 
                     Session["Prof"] = cart.catDetails;
-                    total += (product.qty * item.ProdPrice);
-
+               // double total=    cart.getTotal(product);
+               
                 }
                // orderTotal += (item.Count * item.Product.Price);
                

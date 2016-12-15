@@ -11,7 +11,7 @@ namespace The_Supplier.Models
         public string prodID { get; set; }
         public int qty { get; set; }
         public double subTotal { get; set; }
-        public decimal total { get; set; }
+        public double total { get; set; }
 
        
     }
