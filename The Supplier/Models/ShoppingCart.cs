@@ -12,7 +12,6 @@ namespace The_Supplier.Models
         public int qty { get; set; }
         public double subTotal { get; set; }
         public double total { get; set; }
-
-       
+ 
     }
-}
+}   
